@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:padding="@dimen/zero_level_margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/zero_level_margin">
+    <LinearLayout android:id="@+id/one" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/notif_id" android:layout_width="0dp" android:layout_height="0dp"/>
+        <TextView android:id="@+id/nicon" android:layout_width="0dp" android:layout_height="0dp"/>
+        <TextView android:id="@+id/nlink" android:layout_width="0dp" android:layout_height="0dp"/>
+        <TextView android:id="@+id/nevent" android:layout_width="0dp" android:layout_height="0dp"/>
+        <TextView android:textSize="@dimen/font_14" android:id="@+id/date" android:padding="@dimen/zero_level_margin" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/help_desk" android:layout_weight="3"/>
+        <ImageView android:id="@+id/action_icon" android:padding="@dimen/zero_level_margin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:contentDescription="@string/ratings" app:srcCompat="@drawable/ic_star_black_24dp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/two" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/zero_level_margin" app:layout_constraintTop_toBottomOf="@+id/one">
+        <ImageView android:id="@+id/merchant" android:padding="@dimen/zero_level_margin" android:layout_width="0dp" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="1" android:contentDescription="@string/ratings" app:srcCompat="@drawable/ic_person_default"/>
+        <TextView android:textSize="@dimen/font_18" android:textColor="@color/textColor" android:id="@+id/message" android:padding="@dimen/zero_level_margin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="6"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

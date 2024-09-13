@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="?android:textAppearanceLarge" n1:textSize="@dimen/font_two" n1:id="@+id/name" n1:padding="@dimen/two_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/profile" />
+    <TextView n1:id="@+id/id" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="0.0dip" />
+    <TextView n1:id="@+id/link" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="0.0dip" />
+</android.support.constraint.ConstraintLayout>

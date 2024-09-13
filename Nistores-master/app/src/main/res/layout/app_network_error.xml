@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/network_error_layout"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="56.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/network_error_layout"
+        app:layout_constraintLeft_toLeftOf="@+id/network_error_layout"
+        app:layout_constraintRight_toRightOf="@+id/network_error_layout"
+        app:layout_constraintTop_toTopOf="@+id/network_error_layout">
+        <TextView
+            android:textAlignment="center"
+            android:textSize="@dimen/font_three"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/network_error" />
+        <android.support.v7.widget.AppCompatButton
+            android:theme="@style/ButtonBlue"
+            android:textSize="20.0sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_retry"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_marginTop="24.0dip"
+            android:layout_marginBottom="24.0dip"
+            android:text="@string/retry" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/WebAppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".folders.pages.SuccessPaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message"
+            android:textSize="28.0sp"
+            android:textColor="@color/textColor"
+            android:padding="@dimen/four_level_margin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/your_payment_was_successful" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:theme="@style/ButtonOrange"
+            android:textSize="@dimen/font_18"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_back"
+            android:padding="10.0dip"
+            android:drawableLeft="@drawable/ic_arrow_back_white"
+            android:drawableStart="@drawable/ic_arrow_back_white"
+            android:layout_width="240dp"
+            android:layout_height="60.0dip"
+            android:layout_margin="@dimen/two_level_margin"
+            android:text="@string/back_to_home" />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

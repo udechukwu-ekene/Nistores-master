@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myCoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/WebAppTheme"
+    android:background="@color/littleGrey"
+    tools:context=".folders.pages.CreateStoreActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/info_layout"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:padding="@dimen/three_level_margin">
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/store_name" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_store_name"
+                    android:layout_width="fill_parent"
+                    app:hintEnabled="false"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/store_name"
+                        android:background="@drawable/input_style1"
+                        android:padding="@dimen/one_level_margin"
+                        android:textColor="@color/textColor"
+                        android:layout_width="fill_parent"
+
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="@string/store_name"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/select_loc" />
+                <Spinner
+                    android:id="@+id/my_location"
+                    android:background="@drawable/input_style1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/select_store_number" />
+                <Spinner
+                    android:id="@+id/store_number"
+                    android:background="@drawable/input_style1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/store_address" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_store_address"
+                    android:layout_width="fill_parent"
+                    app:hintEnabled="false"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/store_address"
+                        android:background="@drawable/input_style1"
+                        android:padding="@dimen/one_level_margin"
+                        android:minHeight="100dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:hint="@string/store_address"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/store_email" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_store_email"
+                    android:layout_width="fill_parent"
+                    app:hintEnabled="false"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/store_email"
+                        android:background="@drawable/input_style1"
+                        android:padding="@dimen/one_level_margin"
+                        android:textColor="@color/textColor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:hint="@string/store_email"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/store_phone" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_store_phone"
+                    android:layout_width="fill_parent"
+                    app:hintEnabled="false"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/store_phone"
+                        android:background="@drawable/input_style1"
+                        android:padding="@dimen/one_level_margin"
+                        android:textColor="@color/textColor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:hint="@string/store_phone"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/support_phone_number" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_support"
+                    android:layout_width="fill_parent"
+                    app:hintEnabled="false"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/support"
+                        android:background="@drawable/input_style1"
+                        android:padding="@dimen/one_level_margin"
+                        android:textColor="@color/textColor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="@string/support_phone_number"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/website" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_website"
+                    android:layout_width="fill_parent"
+                    app:hintEnabled="false"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/website"
+                        android:background="@drawable/input_style1"
+                        android:padding="@dimen/one_level_margin"
+                        android:textColor="@color/textColor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textWebEditText"
+                        android:hint="@string/website"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/additional_info" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_additional_info"
+                    android:layout_width="fill_parent"
+                    app:hintEnabled="false"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/additional_info"
+                        android:background="@drawable/input_style1"
+                        android:padding="@dimen/one_level_margin"
+                        android:minHeight="100dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:hint="@string/additional_info"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/store_categories_services" />
+                <LinearLayout
+                    android:background="@color/webColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginBottom="4.0dip" />
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:id="@+id/cloader"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    />
+
+                <!-- Network error layout for categories -->
+                <LinearLayout
+                    android:id="@+id/network_error_layout"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="56.0dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="@dimen/font_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/could_not_fetch_categories" />
+                    <android.support.v7.widget.AppCompatButton
+                        android:theme="@style/ButtonBlue"
+                        android:textSize="14.0sp"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/btn_retry"
+                        android:padding="10.0dip"
+                        android:layout_width="150.0dip"
+                        android:layout_height="45.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:layout_marginBottom="10.0dip"
+                        android:text="@string/retry" />
+                </LinearLayout>
+                <!-- End Network error layout for categories -->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_category"
+                    android:scrollbars="vertical"
+                    android:clipToPadding="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:theme="@style/ButtonOrange"
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/btn_create_store"
+                    android:padding="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/two_level_margin"
+                    android:text="@string/create_store"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/loader_layout"
+        android:visibility="gone"
+        android:background="@color/transparentBlue"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ProgressBar
+            android:id="@id/loader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/loader_layout"
+            app:layout_constraintLeft_toLeftOf="@id/loader_layout"
+            app:layout_constraintRight_toRightOf="@id/loader_layout"
+            app:layout_constraintTop_toTopOf="@id/loader_layout" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

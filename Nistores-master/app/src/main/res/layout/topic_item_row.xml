@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:background="@android:color/white" n1:padding="@dimen/one_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/zero_level_margin"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/zero_level_margin">
+        <ImageView n1:id="@+id/authorPic" n1:layout_width="35.0dip" n1:layout_height="35.0dip" n1:scaleType="centerCrop" n1:contentDescription="@string/default_picture" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="@dimen/font_18" n1:textColor="@color/textColor" n1:id="@+id/title" n1:padding="@dimen/zero_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/profile" n1:maxLines="1" />
+        <TextView n1:id="@+id/topic_id" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="0.0dip" />
+    </LinearLayout>
+</LinearLayout>

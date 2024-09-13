@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/WebAppTheme"
+    android:background="@color/littleGrey"
+    android:padding="@dimen/one_level_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView android:layout_gravity="center" android:id="@+id/card_view" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground" app:cardCornerRadius="@dimen/zero_level_margin" app:cardUseCompatPadding="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/thumbnail" android:background="?attr/selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="200dp" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="@string/create_new_store" app:srcCompat="@drawable/ic_add_box"/>
+                <TextView android:textAlignment="center" android:textSize="@dimen/font_three" android:textColor="@color/webColor" android:id="@+id/store_id" android:padding="@dimen/zero_level_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/create_new_store" android:layout_below="@+id/thumbnail"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view" android:visibility="visible" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ProgressBar android:id="@+id/loader" android:padding="@dimen/three_level_margin" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/network_error" android:padding="56dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_three" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/could_not_fetch_stores"/>
+            <android.support.v7.widget.AppCompatButton android:theme="@style/ButtonBlue" android:textSize="20sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/btn_retry" android:padding="10dp" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:text="@string/retry"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

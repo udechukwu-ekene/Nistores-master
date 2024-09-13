@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout n1:id="@+id/myCoordinatorLayout" n1:background="@color/littleGrey" n1:paddingLeft="@dimen/one_level_margin" n1:paddingTop="@dimen/one_level_margin" n1:paddingRight="@dimen/one_level_margin" n1:paddingBottom="@dimen/bottom_nav_height" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:padding="@dimen/two_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textAlignment="center" n1:textSize="22.0sp" n1:textColor="@color/webColor" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/one_level_margin" n1:text="@string/title_display_port" />
+            <android.support.design.widget.TextInputLayout n1:id="@+id/input_layout_name" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <EditText n1:id="@+id/product_name" n1:background="@drawable/input_style1" n1:padding="@dimen/one_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/product_name" n1:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView n1:textColor="@color/textColor" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/two_level_margin" n1:text="@string/select_store" />
+            <Spinner n1:id="@+id/select_store" n1:background="@drawable/input_style1" n1:layout_width="fill_parent" n1:layout_height="40.0dip" />
+
+            <TextView n1:textColor="@color/textColor" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/two_level_margin" n1:text="@string/select_category" />
+            <android.support.v7.widget.RecyclerView n1:id="@+id/recycler_category" n1:scrollbars="vertical" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+
+            <TextView n1:textColor="@color/textColor" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/two_level_margin" n1:text="@string/description" />
+            <android.support.design.widget.TextInputLayout n1:id="@+id/input_layout_description" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <EditText n1:id="@+id/description" n1:background="@drawable/input_style1" n1:padding="@dimen/one_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="80.0dip" n1:hint="@string/description" n1:inputType="textCapSentences|textMultiLine" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView n1:textColor="@color/textColor" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/two_level_margin" n1:text="@string/main_photo" />
+            <android.support.constraint.ConstraintLayout n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView
+                    n1:adjustViewBounds="true"
+                    n1:id="@+id/main_photo"
+                    n1:padding="@dimen/zero_level_margin"
+                    n1:background="@color/transparentBlue"
+                    n1:focusable="true" n1:clickable="true"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="@dimen/upload_height"
+                    n1:scaleType="fitCenter"
+                    n1:contentDescription="@string/load_product_pic" />
+                <ProgressBar
+                    n1:visibility="gone"
+                    n1:id="@+id/progress_upload"
+                    n1:layout_width="match_parent"
+                    n1:layout_height="wrap_content"
+                    n2:layout_constraintBottom_toBottomOf="parent"
+                    n2:layout_constraintLeft_toLeftOf="parent"
+                    n2:layout_constraintRight_toRightOf="parent"
+                    n2:layout_constraintTop_toTopOf="parent"
+                    xmlns:n2="http://schemas.android.com/apk/res-auto"/>
+
+                <TextView
+                    n1:id="@+id/click_upload"
+                    n1:textAlignment="center"
+                    n1:textSize="@dimen/font_two"
+                    n1:textColor="@color/webColor"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content"
+                    n1:text="@string/click_to_upload"
+                    n2:layout_constraintBottom_toBottomOf="parent"
+                    n2:layout_constraintLeft_toLeftOf="parent"
+                    n2:layout_constraintRight_toRightOf="parent"
+                    n2:layout_constraintTop_toTopOf="parent"
+                    xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            </android.support.constraint.ConstraintLayout>
+            <TextView n1:textColor="@color/textColor" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/two_level_margin" n1:text="@string/more_photos" />
+            <android.support.v7.widget.RecyclerView
+                n1:id="@+id/recycler_img_view"
+                n1:scrollbars="vertical"
+                n1:clipToPadding="false"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatButton n1:theme="@style/ButtonOrange" n1:textSize="14.0sp" n1:textColor="@android:color/white" n1:layout_gravity="start" n1:id="@+id/btn_more_photos" n1:padding="10.0dip" n1:layout_width="170.0dip" n1:layout_height="45.0dip" n1:layout_marginBottom="24.0dip" n1:text="@string/click_to_upload_more" />
+            <TextView n1:textColor="@color/textColor" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/two_level_margin" n1:text="@string/price" />
+            <RadioGroup n1:id="@+id/radioGroupPrice" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <RadioButton n1:id="@+id/radio_price" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/price" />
+                <RadioButton n1:layout_gravity="end" n1:id="@+id/radio_contact" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/one_level_margin" n1:text="@string/contact_for_details" />
+            </RadioGroup>
+            <android.support.design.widget.TextInputLayout n1:id="@+id/input_layout_price" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <EditText n1:id="@+id/price" n1:background="@drawable/input_style1" n1:padding="@dimen/one_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/enter_price" n1:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.v7.widget.AppCompatButton n1:theme="@style/ButtonBlue" n1:textSize="20.0sp" n1:textColor="@android:color/white" n1:layout_gravity="center_horizontal" n1:id="@+id/btn_upload" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="60.0dip" n1:layout_marginLeft="@dimen/one_level_margin" n1:layout_marginTop="24.0dip" n1:layout_marginRight="@dimen/one_level_margin" n1:layout_marginBottom="24.0dip" n1:text="@string/upload_product" />
+        </LinearLayout>
+
+    </ScrollView>
+    <android.support.constraint.ConstraintLayout n1:id="@+id/network_error_layout" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:padding="56.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="@id/network_error_layout" n4:layout_constraintLeft_toLeftOf="@id/network_error_layout" n4:layout_constraintRight_toRightOf="@id/network_error_layout" n4:layout_constraintTop_toTopOf="@id/network_error_layout" xmlns:n4="http://schemas.android.com/apk/res-auto">
+            <TextView n1:textSize="@dimen/font_three" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/network_error" />
+            <android.support.v7.widget.AppCompatButton n1:theme="@style/ButtonBlue" n1:textSize="20.0sp" n1:textColor="@android:color/white" n1:layout_gravity="center_horizontal" n1:id="@id/btn_retry" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="60.0dip" n1:layout_marginTop="24.0dip" n1:layout_marginBottom="24.0dip" n1:text="@string/retry" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout n1:id="@+id/loader_layout" n1:visibility="gone" n1:background="@color/transparentBlue" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintLeft_toLeftOf="parent" n5:layout_constraintRight_toRightOf="parent" n5:layout_constraintTop_toTopOf="parent" xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <ProgressBar n1:id="@id/loader" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n5:layout_constraintBottom_toBottomOf="@id/loader_layout" n5:layout_constraintLeft_toLeftOf="@id/loader_layout" n5:layout_constraintRight_toRightOf="@id/loader_layout" n5:layout_constraintTop_toTopOf="@id/loader_layout" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout n1:paddingTop="@dimen/one_level_margin" n1:paddingBottom="@dimen/one_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/one_level_margin"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView n1:layout_gravity="center" n1:orientation="vertical" n1:id="@+id/card_view" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:foreground="?selectableItemBackground" n2:cardCornerRadius="@dimen/zero_level_margin" n2:cardUseCompatPadding="true" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <LinearLayout n1:orientation="horizontal" n1:id="@+id/first" n1:padding="@dimen/one_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/zero_level_margin">
+                    <ImageView n1:id="@+id/storeLogo" n1:background="@color/greyShade1" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:scaleType="centerCrop" n1:contentDescription="@string/default_picture" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="@dimen/font_18" n1:textColor="@color/textColor" n1:id="@+id/storeName" n1:padding="@dimen/zero_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/profile" n1:maxLines="1" n1:textAllCaps="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout n1:orientation="horizontal" n1:id="@+id/second" n1:padding="@dimen/one_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@+id/first">
+                <LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/zero_level_margin">
+                    <ImageView n1:id="@+id/ownerLogo" n1:background="@color/greyShade1" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:scaleType="centerCrop" n1:contentDescription="@string/default_picture" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="@dimen/font_14" n1:textColor="@color/textColor" n1:id="@+id/ownerName" n1:padding="@dimen/zero_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/profile" n1:maxLines="1" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout n1:orientation="vertical" n1:id="@+id/divide1" n1:background="@color/whiteGrey" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginLeft="@dimen/one_level_margin" n1:layout_marginTop="8.0dip" n1:layout_marginRight="@dimen/one_level_margin" n1:layout_marginBottom="4.0dip" n1:layout_below="@+id/second" />
+            <LinearLayout n1:orientation="horizontal" n1:id="@+id/third" n1:padding="@dimen/one_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@+id/divide1">
+                <LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/two_level_margin">
+                    <ImageView n1:focusable="true" n1:clickable="true" n1:id="@+id/follow" n1:background="@drawable/circle_border" n1:padding="@dimen/one_level_margin" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:scaleType="centerCrop" n1:contentDescription="@string/default_picture" n2:srcCompat="@drawable/ic_favorite" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:padding="@dimen/one_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <TextView
+                            n1:id="@+id/merchant_id"
+                            n1:layout_width="0dp"
+                            n1:layout_height="0dp" />
+                        <TextView
+                            n1:id="@+id/store_id"
+                            n1:layout_width="0dp"
+                            n1:layout_height="0dp" />
+                        <TextView
+                            n1:id="@+id/store_uid"
+                            n1:layout_width="0dp"
+                            n1:layout_height="0dp" />
+                        <TextView n1:textSize="@dimen/font_two" n1:id="@+id/chats" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="0" n1:drawableLeft="@drawable/ic_textsms" n1:drawablePadding="@dimen/zero_level_margin" n1:layout_weight="1.0" n1:drawableStart="@drawable/ic_textsms" />
+                        <TextView n1:textSize="@dimen/font_one" n1:layout_gravity="end" n1:id="@+id/views" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="0" n1:drawableLeft="@drawable/ic_views" n1:drawablePadding="@dimen/zero_level_margin" n1:layout_weight="1.0" n1:drawableStart="@drawable/ic_views" />
+                        <TextView n1:textSize="@dimen/font_two" n1:id="@+id/contacts" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="0" n1:drawableLeft="@drawable/ic_person_black_24dp" n1:drawablePadding="@dimen/zero_level_margin" n1:layout_weight="1.0" n1:drawableStart="@drawable/ic_person_black_24dp" />
+                    </LinearLayout>
+                    <LinearLayout n1:id="@+id/starsLayout" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/one_level_margin" n1:layout_marginRight="@dimen/four_level_margin">
+                        <TextView n1:textSize="@dimen/font_one" n1:textColor="@color/textColor" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/ratings" n1:layout_weight="2.0" />
+                        <ImageView n1:id="@+id/star1" n1:padding="@dimen/zero_level_margin" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" n1:contentDescription="@string/ratings" n2:srcCompat="@drawable/ic_star_black_24dp" />
+                        <ImageView n1:id="@+id/star2" n1:padding="@dimen/zero_level_margin" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" n1:contentDescription="@string/ratings" n2:srcCompat="@drawable/ic_star_black_24dp" />
+                        <ImageView n1:id="@+id/star3" n1:padding="@dimen/zero_level_margin" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" n1:contentDescription="@string/ratings" n2:srcCompat="@drawable/ic_star_black_24dp" />
+                        <ImageView n1:id="@+id/star4" n1:padding="@dimen/zero_level_margin" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" n1:contentDescription="@string/ratings" n2:srcCompat="@drawable/ic_star_black_24dp" />
+                        <ImageView n1:id="@+id/star5" n1:padding="@dimen/zero_level_margin" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" n1:contentDescription="@string/ratings" n2:srcCompat="@drawable/ic_star_black_24dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

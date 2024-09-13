@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/WebAppTheme"
+    android:background="@color/littleGrey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".folders.pages.PayActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="@dimen/two_level_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/two_level_margin"
+                android:layout_marginBottom="@dimen/two_level_margin"
+                android:text="@string/enter_your_card_details" />
+
+            <TextView
+                android:textColor="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/two_level_margin"
+                android:text="@string/card_number" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                app:hintEnabled="false"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/card_number"
+                    android:background="@drawable/input_style1"
+                    android:padding="@dimen/two_level_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:minEms="8"
+                    android:hint="@string/card_number_hint"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textColor="@color/textColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/two_level_margin"
+                        android:text="@string/expiry_month" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="fill_parent"
+                        app:hintEnabled="false"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/month"
+                            android:background="@drawable/input_style1"
+                            android:padding="@dimen/two_level_margin"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:maxEms="2"
+                            android:maxLength="2"
+                            android:hint="@string/mm"
+                            android:singleLine="true" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textColor="@color/textColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/two_level_margin"
+                        android:text="@string/expiry_year" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="fill_parent"
+                        app:hintEnabled="false"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/year"
+                            android:background="@drawable/input_style1"
+                            android:padding="@dimen/two_level_margin"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:maxEms="4"
+                            android:maxLength="4"
+                            android:hint="@string/yyyy"
+                            android:singleLine="true" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textColor="@color/textColor"
+                        android:layout_marginStart="@dimen/two_level_margin"
+                        android:layout_marginLeft="@dimen/two_level_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/two_level_margin"
+                        android:text="@string/cvv" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_marginStart="@dimen/two_level_margin"
+                        android:layout_marginLeft="@dimen/two_level_margin"
+                        app:hintEnabled="false"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/cvv"
+                            android:background="@drawable/input_style1"
+                            android:padding="@dimen/two_level_margin"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberPassword"
+                            android:maxLength="4"
+                            android:minEms="4"
+                            android:hint="@string/cvv_hint"
+                            android:singleLine="true" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:theme="@style/ButtonSuccess"
+                android:textSize="@dimen/font_two"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_pay"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/three_level_margin"
+                android:layout_marginBottom="@dimen/one_level_margin"
+                android:text="@string/pay"/>
+
+            <LinearLayout
+                android:background="@color/webColor"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginBottom="4.0dip" />
+
+            <TextView
+                android:id="@+id/error_statement"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginStart="@dimen/two_level_margin"
+                android:layout_marginLeft="@dimen/two_level_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/two_level_margin"
+                android:text="" />
+
+        </LinearLayout>
+
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layout_custom_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:minHeight="150dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_card_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_card_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/card_number"
+                        android:inputType="number"
+                        android:minEms="8"
+                        android:text=""
+                        />
+
+                    <EditText
+                        android:id="@+id/edit_cvc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/cvv"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:minEms="4"
+                        android:text=""/>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <EditText
+                    android:id="@+id/edit_expiry_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_card_num"
+                    android:layout_toLeftOf="@id/divider_horizontal"
+                    android:gravity="right"
+                    android:hint="@string/mm"
+                    android:inputType="number"
+                    android:maxEms="3"
+                    android:maxLength="2"
+                    android:text=""
+                    android:layout_toStartOf="@id/divider_horizontal"/>
+
+                <EditText
+                    android:id="@+id/edit_expiry_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_card_num"
+                    android:layout_toRightOf="@id/divider_horizontal"
+                    android:gravity="left"
+                    android:hint="@string/yyyy"
+                    android:inputType="number"
+                    android:maxEms="4"
+                    android:maxLength="4"
+                    android:text=""
+                    android:layout_toEndOf="@id/divider_horizontal"/>
+
+                <Button
+                    android:id="@+id/button_perform_transaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_expiry_year"
+                    android:layout_centerHorizontal="true"
+                    android:padding="8dp"
+                    android:text="Charge card (init from server)"/>
+                <Button
+                    android:id="@+id/button_perform_local_transaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/button_perform_transaction"
+                    android:layout_centerHorizontal="true"
+                    android:padding="8dp"
+                    android:text="Charge card (init from app)"/>
+            </RelativeLayout>
+
+        </RelativeLayout>-->
+
+    </ScrollView>
+
+
+    <include layout="@layout/app_process" />
+    <include layout="@layout/app_network_error" />
+
+</android.support.constraint.ConstraintLayout>

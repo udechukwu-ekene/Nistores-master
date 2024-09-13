@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#FF4081</color>
+    <color name="colorPrimary">#601183</color>
+    <color name="colorPrimary1">#3F51B5</color>
+    <color name="colorPrimaryDark2">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+	<color name="companyColor">#601183</color>
+	<color name="greenColor">#ff1b5e20</color>
+    <color name="greenColorLight">#ff00bd00</color>
+    <color name="greenRating">#ff01df00</color>
+    <color name="greyShade1">#ffaaaaaa</color>
+	<color name="lightBlue">#ff1565c0</color>
+    <color name="lighterBlue">#ffbbdefb</color>
+    <color name="littleGrey">#ffeeeeee</color>
+	<color name="redColor">#ffb71c1c</color>
+    <color name="textColor">#333</color>
+    <color name="darkGrey">#ff222222</color>
+	<color name="transparentAccent">#22ff4081</color>
+    <color name="transparentBlue">#553f51b5</color>
+	<color name="webColor">#601183</color>
+    <color name="whiteGrey">#aacccccc</color>
+	
+</resources>

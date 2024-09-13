@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/WebAppTheme"
+    android:background="@color/littleGrey"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".folders.pages.DeliveryOrderActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:textColor="@color/webColor"
+                android:padding="@dimen/two_level_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instructions"/>
+
+            <TextView
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/textColor"
+                android:padding="@dimen/one_level_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/deliveryOrder1"
+                android:drawableLeft="@drawable/ic_lens_colored"
+                android:drawablePadding="@dimen/one_level_margin"
+                android:drawableStart="@drawable/ic_lens_colored"/>
+            <TextView
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/textColor"
+                android:padding="@dimen/one_level_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/deliveryOrder2"
+                android:drawableLeft="@drawable/ic_lens_colored"
+                android:drawablePadding="@dimen/one_level_margin"
+                android:drawableStart="@drawable/ic_lens_colored"/>
+
+            <TextView
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/textColor"
+                android:padding="@dimen/one_level_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/deliveryOrder3"
+                android:drawableLeft="@drawable/ic_lens_colored"
+                android:drawablePadding="@dimen/one_level_margin"
+                android:drawableStart="@drawable/ic_lens_colored"/>
+
+            <LinearLayout
+                android:background="@color/webColor"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginBottom="4.0dip" />
+
+            <TextView
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/textColor"
+                android:padding="@dimen/one_level_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/deliveryOrder4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/loader"
+                android:padding="@dimen/three_level_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/network_error"
+                android:padding="56dp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/font_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all_the_states_could_not"/>
+                <android.support.v7.widget.AppCompatButton
+                    android:theme="@style/ButtonBlue"
+                    android:textSize="@dimen/font_18"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/btn_retry"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/retry"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:theme="@style/ButtonOrange"
+                android:textSize="@dimen/font_two"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_init"
+                android:padding="10dp"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_margin="@dimen/two_level_margin"
+                android:text="@string/initiate_delivery"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

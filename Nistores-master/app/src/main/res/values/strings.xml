@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_us">About Us</string>
+    <string name="account_name">Account Name: Nistores Nigeria Limited </string>
+    <string name="account_number">Account Number: 0248148259 </string>
+    <string name="action_refresh">Refresh</string>
+    <string name="add_to_contacts">Add to Contacts</string>
+    <string name="address">Address</string>
+    <string name="additional_info">Additional Info</string>
+    <string name="admin">Admin</string>
+    <string name="admin_section">Admin Section</string>
+    <string name="all_delivery_orders">All Delivery Orders</string>
+    <string name="all_the_states_could_not">Couldn\'t load all the 36 states </string>
+    <string name="already_approved">Already Approved</string>
+    <string name="amount">Amount:</string>
+    <string name="amount_our_plans_are">Amount: Our plans are:</string>
+    <string name="api_url">https://www.nistores.com.ng/</string>
+    <string name="app_logo1">Nistores Logo</string>
+    <string name="app_name">Nistores</string>
+    <string name="approve_delivery_order">Approve this order</string>
+    <string name="are_you_ready">Are you ready?</string>
+    <string name="awaiting_payment">Awaiting Payment</string>
+    <string name="back_navigation">Back navigation</string>
+    <string name="back_to_home">Back to home</string>
+    <string name="bank">Bank : GTBank </string>
+    <string name="btn_sign_in">Sign in</string>
+    <string name="business_fly">With Nistores you can make your Business Fly</string>
+    <string name="call_now">Call now</string>
+    <string name="call_us">For instant Help, Call our Customer Care Representative on +2349060155912</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_number_hint">0000 0000 0000 0000</string>
+    <string name="categories">Categories</string>
+    <string name="change_profile_pic">Change Profile Picture</string>
+    <string name="click_to_upload">Click to upload</string>
+    <string name="click_to_upload_more">Click to upload more</string>
+    <string name="click_to_select">Click to select picture</string>
+    <string name="complete_reg">Complete Registration</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="confirm_receiving">Confirm Receiving</string>
+    <string name="contact">Contact</string>
+    <string name="contact_for_details">Contact for details</string>
+    <string name="contact_number">+2349060155912</string>
+    <string name="contacts">Contacts</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_new_store">Create New Store</string>
+    <string name="create_store">Create Store</string>
+    <string name="create_ticket">Create Request Ticket</string>
+    <string name="create_your_account">Create Your Account</string>
+    <string name="confirm">Confirm</string>
+    <string name="continua">Continue</string>
+    <string name="copy_number_out_select_payment">Copy this number out and select a payment method</string>
+    <string name="could_not_fetch_stores">"Couldn't get your stores"</string>
+    <string name="could_not_fetch_categories">"Couldn't get all categories"</string>
+    <string name="could_not_fetch_interests">"Couldn't get all interests"</string>
+    <string name="cvv">CVV</string>
+    <string name="cvv_hint">123</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="default_picture">Default Picture</string>
+    <string name="delete">Delete</string>
+    <string name="deliver_order">Deliver Order</string>
+    <string name="delivered_order">Delivered Order</string>
+    <string name="delivery_order_channel_name">Delivery Orders</string>
+    <string name="delivery_order_channel_desc">Notifies you of the progress in your delivery</string>
+    <string name="delivery_orders">Delivery Orders</string>
+    <string name="deliveryOrder1">Initiate delivery by clicking on the "Initiate Delivery" button at the bottom of this page</string>
+    <string name="deliveryOrder2">An order number will be automatically generated</string>
+    <string name="deliveryOrder3">You will be taken to a page where you will fill the delivery order form</string>
+    <string name="deliveryOrder4">Click on any of the states to see delivery order numbers coming to the state</string>
+    <string name="description">Description</string>
+    <string name="depositor_name">Depositor name: Your store number first , then the first word of your store name eg LAG00186 Ginotek, ABJ10560 Sunshine,ANB16800 Emmalex.</string>
+    <string name="depositor_name2">"Depositor name: Your delivery order number first , then your full name. eg NS175–20181130–0002 Olatunde Amara"</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="easy_location">Your products are displayed to people around you who can easily locate you for bulk supplies</string>
+    <string name="edit">Edit</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="edit_store">Edit Store</string>
+    <string name="email">Email</string>
+    <string name="enter_all_item_price">Enter total price of all the items</string>
+    <string name="enter_your_card_details">Enter your card details to pay</string>
+    <string name="enter_price">Enter Price</string>
+    <string name="enter_store_number">Enter store number</string>
+    <string name="error_occur">Sorry an error occurred.</string>
+    <string name="expiry_month">Expiry Month</string>
+    <string name="expiry_year">Expiry Year</string>
+    <string name="explore_stores">Explore Stores</string>
+    <string name="favourites">Favourites</string>
+    <string name="featured_ad">Featured Ad</string>
+    <string name="first_name">First Name</string>
+    <string name="follow">Follow</string>
+    <string name="follow_store">Follow Store</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="hello_business_fragment">Hello Business fragment</string>
+    <string name="hello_chats_fragment">Hello chat fragment</string>
+    <string name="hello_home_fragment">Hello Home fragment</string>
+    <string name="hello_port_fragment">Hello display port fragment</string>
+    <string name="hello_top_fragment">Hello top posts fragment</string>
+    <string name="help_desk">Help Desk</string>
+    <string name="hint_name">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="how_help">How can we help you?</string>
+    <string name="how_to_make_bank_payment">How to make bank payment</string>
+    <string name="how_to_make_payment_via_mobile">How to make payment through mobile transfer</string>
+    <string name="in_stock">In Stock</string>
+    <string name="initiate_delivery">Initiate Delivery</string>
+    <string name="instructions">Instructions</string>
+    <string name="interests">Interests</string>
+    <string name="last_name">Last Name</string>
+    <string name="live_product_photos">Live Photos of Product</string>
+    <string name="load_product_pic">Loading Product Picture/</string>
+    <string name="loading">loading…</string>
+    <string name="log_in_intro">Log in to get in touch with exotic businesses around you.</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="main_photo">Main Photo</string>
+    <string name="make_comment_to_confirm">Make a comment and click on the confirm button</string>
+    <string name="manage_products">Manage Products</string>
+    <string name="member_since">Member Since</string>
+    <string name="members">Members</string>
+    <string name="message_owner">Message Owner</string>
+    <string name="messages">Messages</string>
+    <string name="mm">MM</string>
+    <string name="month_plan_1">1 month = 2000</string>
+    <string name="month_plan_3">3 months = 5000</string>
+    <string name="month_plan_6">6 months = 10000</string>
+    <string name="month_plan_12">1 year = 20000</string>
+    <string name="more_photos">More Photos</string>
+    <string name="my_stores">My Stores</string>
+    <string name="narration_description">"Narration/Description: Your store number: eg. eng00002, abj00275, ENG00586 etc "</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="negotiate">Negotiate</string>
+    <string name="negotiate_convince">You can negotiate and convince buyers</string>
+    <string name="network_error">Network Error Occurred.</string>
+    <string name="no_account">"Don't have an account?"</string>
+    <string name="no_comment_from_receiver">No comment yet from the receiver</string>
+    <string name="no_data">No data at the moment</string>
+    <string name="no_notifications">No Notification</string>
+    <string name="no_transaction_yet">No transaction yet</string>
+    <string name="notification">Notification</string>
+    <string name="open_camera">Open Camera</string>
+    <string name="or">OR</string>
+    <string name="order_number">Order Number</string>
+    <string name="order_content_desc">Order Content Description</string>
+    <string name="osho_free">"It's Free"</string>
+    <string name="order_status">Order Status</string>
+    <string name="out_stock">Out of Stock</string>
+    <string name="own_store">Own a Store</string>
+    <string name="owner">Owner</string>
+    <string name="owner_profile">Owner Profile</string>
+    <string name="package_sent">Package Sent</string>
+    <string name="password">Password</string>
+    <string name="pay">Pay</string>
+    <string name="pay_in_bank">Pay in the Bank (Bank Deposit)</string>
+    <string name="pay_for_order">Pay for this order</string>
+    <string name="pay_through_agents">Pay through our agents (call our agents to help you make payment)</string>
+    <string name="pay_with_atm">Pay with Credit Card (ATM Card)</string>
+    <string name="pay_with_bank">Pay with Bank (Acc Number)</string>
+    <string name="pay_with_mobile">Pay with  Mobile Transfer (Mobile App)</string>
+    <string name="payment_instruction">Payment Instruction</string>
+    <string name="payment_received">Payment Received</string>
+    <string name="phone_no">Phone No</string>
+    <string name="phone_no_your_phone">Phone no: Your phone number </string>
+    <string name="photos_of_product">Photo(s) of Product</string>
+    <string name="polls">Polls</string>
+    <string name="price">Price</string>
+    <string name="proceed">Proceed</string>
+    <string name="processing">processing…</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_views">Product Views</string>
+    <string name="products">Products</string>
+    <string name="profile">Profile</string>
+    <string name="profile_info">Profile Information</string>
+    <string name="profile_views">Profile Views</string>
+    <string name="rate_this_store">Rate this store</string>
+    <string name="ratings">Ratings</string>
+    <string name="receiver_location">"Receiver's Location"</string>
+    <string name="receiver_full_name">"Receiver's Full Name"</string>
+    <string name="receiver_username">"Receiver's Username"</string>
+    <string name="recent_posts">Recent Posts</string>
+    <string name="refresh">refresh</string>
+    <string name="renew">Renew</string>
+    <string name="report">Report</string>
+    <string name="retry">Retry</string>
+    <string name="review">Review</string>
+    <string name="robust_network">Take advantage of our robust social network</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="search">Search</string>
+    <string name="search_goods_services">Search here</string>
+    <string name="search_results">Search Results</string>
+    <string name="search_ticket">Search Answered Tickets</string>
+    <string name="secure_store">You can now secure a store on Nistores and display your products to millions of viewers Nationwide for free.</string>
+    <string name="see_all">See all</string>
+    <string name="see_more">See more</string>
+    <string name="select_according_to_budget">Select according to your budget.</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_interest">Select Interest</string>
+    <string name="select_loc">Select Location</string>
+    <string name="select_order_status">Select Order Status</string>
+    <string name="select_payment_method">Select Payment Method</string>
+    <string name="select_store">Select Store</string>
+    <string name="select_store_number">Select Store No.</string>
+    <string name="send">send</string>
+    <string name="send_private_message">Send a Private Message</string>
+    <string name="sender_location">"Sender's Location"</string>
+    <string name="sending">sending…</string>
+    <string name="service_started">Service Started</string>
+    <string name="settings">Settings</string>
+    <string name="sign_up">Sign up here</string>
+    <string name="simple_fast">Its simple, fast and easy.</string>
+    <string name="state_orders">State Orders</string>
+    <string name="state_stores">State Stores</string>
+    <string name="status">Status</string>
+    <string name="store_email">Store Email</string>
+    <string name="store_address">Store Address</string>
+    <string name="store_categories_services">"Store Categories/Services"</string>
+    <string name="store_items">Store Items</string>
+    <string name="store_name">Store Name</string>
+    <string name="store_number">Store Number</string>
+    <string name="store_phone">Store Phone</string>
+    <string name="store_reviews">Store Reviews</string>
+    <string name="store_services">Store Services</string>
+    <string name="store_views">Store Views</string>
+    <string name="stores">Stores</string>
+    <string name="sub_history">Subscription History</string>
+    <string name="support">Support</string>
+    <string name="support_phone_number">Support Phone Number</string>
+    <string name="surname">Surname</string>
+    <string name="success_product">Your product has been successfully uploaded.</string>
+    <string name="swipe_down_refresh">Swipe down to refresh</string>
+    <string name="take_live_photos">Take Camera Photo(s) of Product</string>
+    <string name="take_live_videos">Take Live Video of You and the Product</string>
+    <string name="terms_policy">Terms and Policy</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_business_lounge">Business Lounge</string>
+    <string name="title_chats">Chats</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_display_port">Display Port</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_top_stories">Top Stores</string>
+    <string name="topics">Topics</string>
+    <string name="total_price">Total Price(for all the items)</string>
+    <string name="turn_off_notif">Turn off Notifications</string>
+    <string name="type_your_message">Type your message</string>
+    <string name="unique_url">You can have a Unique URL/web address for your store that you can share on other platforms.</string>
+    <string name="update">Update</string>
+    <string name="update_interest">Update Interest</string>
+    <string name="upload_product">Upload Product</string>
+    <string name="upload_another_product">Upload another product</string>
+    <string name="uploading...">Uploading…</string>
+    <string name="uploading_pictures">Uploading Pictures…</string>
+    <string name="uploading_video">Uploading Video…</string>
+    <string name="username">Username</string>
+    <string name="video">Video</string>
+    <string name="view_profile">View Profile</string>
+    <string name="views">Views</string>
+    <string name="visit_store">Visit Store</string>
+    <string name="website">Website</string>
+    <string name="weekend_giveaways">Weekend Giveaways</string>
+    <string name="what_store_number">What is your store number?</string>
+    <string name="when_you_make_payment">When you make payment, the bank will notify us and your account will be activated within 24 hours.</string>
+    <string name="when_you_make_payment_short">When you make payment, the bank will notify us</string>
+    <string name="why_nistores">Why Nistores?</string>
+    <string name="write_your_review">Write your review here</string>
+    <string name="yes_account">Already have an account?</string>
+    <string name="you">You</string>
+    <string name="you_can_make_payment_via_mobile">You can make payment via mobile transfer using the following details</string>
+    <string name="you_can_make_payment_in_bank">You can make payment in any of the bank accounts listed below with the following details</string>
+    <string name="your_delivery_order_number">Your delivery order number is</string>
+    <string name="your_location">Your Location</string>
+    <string name="your_store_number_is">Your store number is</string>
+    <string name="your_payment_was_successful">Your payment was successful</string>
+    <string name="yyyy">YYYY</string>
+
+    <string-array name="locations">
+        <item>Abuja</item>
+        <item>Abia</item>
+        <item>Adamawa</item>
+        <item>Akwa Ibom</item>
+        <item>Anambra</item>
+        <item>Bauchi</item>
+        <item>Bayelsa</item>
+        <item>Benue</item>
+        <item>Borno</item>
+        <item>Cross River</item>
+        <item>Delta</item>
+        <item>Ebonyi</item>
+        <item>Ekiti</item>
+        <item>Edo</item>
+        <item>Enugu</item>
+        <item>Gombe</item>
+        <item>Imo</item>
+        <item>Jigawa</item>
+        <item>Kaduna</item>
+        <item>Kano</item>
+        <item>Katsina</item>
+        <item>Kebbi</item>
+        <item>Kogi</item>
+        <item>Kwara</item>
+        <item>Lagos</item>
+        <item>Nasarawa</item>
+        <item>Niger</item>
+        <item>Ogun</item>
+        <item>Osun</item>
+        <item>Oyo</item>
+        <item>Plateau</item>
+        <item>Rivers</item>
+        <item>Sokoto</item>
+        <item>Taraba</item>
+        <item>Yobe</item>
+        <item>Zamfara</item>
+    </string-array>
+    <string-array name="search_options">
+        <item>All</item>
+        <item>Products</item>
+        <item>Stores</item>
+        <item>Members</item>
+        <item>Topics</item>
+    </string-array>
+    <string name="title_activity_store">StoreActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+
+</resources>

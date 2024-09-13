@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myCoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/WebAppTheme"
+    android:background="@color/littleGrey"
+    tools:context=".folders.pages.InitiateDeliveryActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/info_layout"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:padding="@dimen/three_level_margin">
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/order_number" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_order_id"
+                    android:layout_width="fill_parent"
+                    app:hintEnabled="false"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/order_id"
+                        android:background="@drawable/input_style1"
+                        android:padding="@dimen/one_level_margin"
+                        android:textColor="@color/textColor"
+                        android:layout_width="fill_parent"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="@string/order_number"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/order_content_desc" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_desc"
+                    android:layout_width="fill_parent"
+                    app:hintEnabled="false"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/content_desc"
+                        android:background="@drawable/input_style1"
+                        android:padding="@dimen/one_level_margin"
+                        android:minHeight="100dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:hint="@string/description"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:background="@color/webColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginBottom="4.0dip" />
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:layout_marginBottom="@dimen/one_level_margin"
+                    android:textSize="@dimen/font_two"
+                    android:text="@string/take_live_photos" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_photo_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:theme="@style/ButtonOrange"
+                    android:textSize="14.0sp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:id="@+id/btn_live_photos"
+                    android:padding="10.0dip"
+                    android:layout_width="wrap_content"
+                    android:drawableStart="@drawable/ic_camera_white"
+                    android:drawableLeft="@drawable/ic_camera_white"
+                    android:drawablePadding="@dimen/one_level_margin"
+                    android:gravity="center"
+                    android:layout_height="60.0dip"
+                    android:layout_marginBottom="24.0dip"
+                    android:text="@string/open_camera" />
+
+                <LinearLayout
+                    android:background="@color/webColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginBottom="4.0dip" />
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:layout_marginBottom="@dimen/one_level_margin"
+                    android:text="@string/take_live_videos" />
+                <VideoView
+                    android:id="@+id/video"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/zero_level_margin"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="4:3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout
+                    android:id="@+id/controls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/zero_level_margin"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/play"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="centerCrop"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="@dimen/zero_level_margin"
+                        android:contentDescription="@string/default_picture"
+                        app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/stop"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="@dimen/zero_level_margin"
+                        android:contentDescription="@string/default_picture"
+                        app:srcCompat="@drawable/ic_stop_black_24dp" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:theme="@style/ButtonOrange"
+                    android:textSize="14.0sp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/btn_live_videos"
+                    android:padding="10.0dip"
+                    android:drawableStart="@drawable/ic_videocam_white"
+                    android:drawableLeft="@drawable/ic_videocam_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60.0dip"
+                    android:layout_marginBottom="24.0dip"
+                    android:text="@string/open_camera" />
+
+                <LinearLayout
+                    android:background="@color/webColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginBottom="4.0dip" />
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/total_price" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_price"
+                    app:hintEnabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/price"
+                        android:background="@drawable/input_style1"
+                        android:padding="@dimen/one_level_margin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_price"
+                        android:inputType="text"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/your_location" />
+                <Spinner
+                    android:id="@+id/my_location"
+                    android:background="@drawable/input_style1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/receiver_location" />
+                <Spinner
+                    android:id="@+id/receiver_location"
+                    android:background="@drawable/input_style1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/select_store" />
+                <Spinner
+                    android:id="@+id/select_store"
+                    android:background="@drawable/input_style1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/what_store_number" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_snumber"
+                    app:hintEnabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/snumber"
+                        android:background="@drawable/input_style1"
+                        android:padding="@dimen/one_level_margin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_store_number"
+                        android:inputType="number"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:textSize="@dimen/font_two"
+                    android:text="@string/receiver_username" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_receiver_username"
+                    app:hintEnabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/input_receiver_username"
+                        android:background="@drawable/input_style1"
+                        android:padding="@dimen/one_level_margin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/receiver_username"
+                        android:inputType="text"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_two"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/receiver_full_name" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_receiver_name"
+                    app:hintEnabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/input_receiver_name"
+                        android:background="@drawable/input_style1"
+                        android:padding="@dimen/one_level_margin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/receiver_full_name"
+                        android:inputType="text"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:theme="@style/ButtonOrange"
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/btn_deliver"
+                    android:padding="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/two_level_margin"
+                    android:text="@string/deliver_order"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/loader_layout"
+        android:visibility="gone"
+        android:background="@color/transparentBlue"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ProgressBar
+            android:id="@id/loader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/loader_layout"
+            app:layout_constraintLeft_toLeftOf="@id/loader_layout"
+            app:layout_constraintRight_toRightOf="@id/loader_layout"
+            app:layout_constraintTop_toTopOf="@id/loader_layout" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="@dimen/font_two"
+        android:textColor="@color/textColor"
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/one_level_margin"
+        android:text="@string/amount_our_plans_are"/>
+
+    <TextView
+        android:textSize="@dimen/font_two"
+        android:textColor="@color/textColor"
+        android:id="@+id/month1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/one_level_margin"
+        android:layout_marginLeft="@dimen/one_level_margin"
+        android:text="@string/month_plan_1"/>
+    <TextView
+        android:textSize="@dimen/font_two"
+        android:textColor="@color/textColor"
+        android:id="@+id/month3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/one_level_margin"
+        android:layout_marginLeft="@dimen/one_level_margin"
+        android:text="@string/month_plan_3"/>
+    <TextView
+        android:textSize="@dimen/font_two"
+        android:textColor="@color/textColor"
+        android:id="@+id/month6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/one_level_margin"
+        android:layout_marginLeft="@dimen/one_level_margin"
+        android:text="@string/month_plan_6"/>
+    <TextView
+        android:textSize="@dimen/font_two"
+        android:textColor="@color/textColor"
+        android:id="@+id/month12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/one_level_margin"
+        android:layout_marginLeft="@dimen/one_level_margin"
+        android:text="@string/month_plan_12"/>
+    <TextView
+        android:textSize="@dimen/font_two"
+        android:textColor="@color/textColor"
+        android:id="@+id/select_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/one_level_margin"
+        android:text="@string/select_according_to_budget"/>
+
+</LinearLayout>

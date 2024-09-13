@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:padding="@dimen/three_level_margin"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+        <TextView n1:textSize="28.0sp"
+            n1:textColor="@color/textColor"
+            n1:padding="@dimen/four_level_margin"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:textAlignment="center"
+            n1:text="@string/success_product" />
+        <android.support.v7.widget.AppCompatButton
+            n1:theme="@style/ButtonOrange"
+            n1:textSize="@dimen/font_18"
+            n1:textColor="@android:color/white"
+            n1:layout_gravity="center_horizontal"
+            n1:id="@+id/btn_back"
+            n1:padding="10.0dip"
+            n1:drawableLeft="@drawable/ic_arrow_back_white"
+            n1:drawableStart="@drawable/ic_arrow_back_white"
+            n1:layout_width="fill_parent"
+            n1:layout_height="60.0dip"
+            n1:layout_margin="@dimen/two_level_margin"
+            n1:text="@string/back_to_home" />
+        <android.support.v7.widget.AppCompatButton
+            n1:theme="@style/ButtonBlueWeb"
+            n1:textSize="@dimen/font_18"
+            n1:textColor="@android:color/white"
+            n1:layout_gravity="center_horizontal"
+            n1:id="@+id/btn_port"
+            n1:padding="10.0dip"
+            n1:layout_width="fill_parent"
+            n1:layout_height="60.0dip"
+            n1:layout_margin="@dimen/two_level_margin"
+            n1:text="@string/upload_another_product" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

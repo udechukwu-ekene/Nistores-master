@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_recent_posts"
+            android:icon="@drawable/ic_sort_black_24dp"
+            android:title="@string/recent_posts" />
+        <item
+            android:id="@+id/nav_favourites"
+            android:icon="@drawable/ic_bookmark_black"
+            android:title="@string/favourites" />
+        <item
+            android:id="@+id/nav_explore_stores"
+            android:icon="@drawable/ic_shopping_cart"
+            android:title="@string/explore_stores" />
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_list_black"
+            android:title="@string/categories" />
+        <item
+            android:id="@+id/nav_delivery_orders"
+            android:icon="@drawable/ic_local_grocery_store_black"
+            android:title="@string/delivery_orders" />
+        <item
+            android:id="@+id/nav_weekend_giveaways"
+            android:icon="@drawable/ic_sentiment_satisfied"
+            android:title="@string/weekend_giveaways" />
+        <item
+            android:id="@+id/nav_my_stores"
+            android:icon="@drawable/ic_store_black"
+            android:title="@string/my_stores" />
+        <item
+            android:id="@+id/nav_own_store"
+            android:icon="@drawable/ic_store_black"
+            android:title="@string/own_store" />
+        <item
+            android:id="@+id/nav_polls"
+            android:icon="@drawable/ic_poll_black"
+            android:title="@string/polls" />
+        <item
+            android:id="@+id/nav_help_desk"
+            android:icon="@drawable/ic_live_help_black_24dp"
+            android:title="@string/help_desk" />
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/ic_vpn_key_black"
+            android:title="@string/admin" />
+
+    </group>
+
+    <item android:title="@string/settings" >
+        <menu >
+            <item
+                android:id="@+id/nav_dashboard"
+                android:checkable="true"
+                android:icon="@drawable/ic_dashboard_black_24dp"
+                android:title="@string/dashboard" />
+            <item
+                android:id="@+id/nav_manage_product"
+                android:checkable="true"
+                android:icon="@drawable/ic_build_black_24dp"
+                android:title="@string/manage_products" />
+            <item
+                android:id="@+id/subscription_history"
+                android:checkable="true"
+                android:icon="@drawable/ic_history_black_24dp"
+                android:title="@string/sub_history" />
+            <item
+                android:id="@+id/notifications"
+                android:checkable="true"
+                android:icon="@drawable/ic_notifications_black_24dp"
+                android:title="@string/turn_off_notif" />
+            <item
+                android:id="@+id/about_us"
+                android:checkable="true"
+                android:icon="@drawable/ic_location_city_black_24dp"
+                android:title="@string/about_us" />
+            <item
+                android:id="@+id/terms_policy"
+                android:checkable="true"
+                android:icon="@drawable/ic_library_books_black_24dp"
+                android:title="@string/terms_policy" />
+            <item
+                android:id="@+id/disclaimer"
+                android:checkable="true"
+                android:icon="@drawable/ic_warning"
+                android:title="@string/disclaimer" />
+            <item
+                android:id="@+id/logout"
+                android:checkable="true"
+                android:icon="@drawable/ic_power_settings_new"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>

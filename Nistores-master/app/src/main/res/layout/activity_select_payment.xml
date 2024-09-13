@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/WebAppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".folders.pages.SelectPaymentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="@dimen/two_level_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:id="@+id/first_phrase"
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_store_number_is"/>
+
+                <TextView
+                    android:id="@+id/store_number"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/webColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_store_number_is"/>
+
+                <TextView
+                    android:textSize="@dimen/font_18"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:padding="@dimen/two_level_margin"
+                    android:layout_height="wrap_content"
+                    android:text="@string/copy_number_out_select_payment"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="@dimen/two_level_margin"
+                android:background="@color/lightBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/paymentGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioButton android:id="@+id/atm"
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pay_with_atm" />
+                    <RadioButton android:id="@+id/with_bank"
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pay_with_bank" />
+                    <RadioButton android:id="@+id/in_bank"
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pay_in_bank" />
+                    <RadioButton android:id="@+id/mobile"
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pay_with_mobile" />
+                    <RadioButton android:id="@+id/agent"
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pay_through_agents" />
+
+                </RadioGroup>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:theme="@style/ButtonOrange"
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/btn_proceed"
+                    android:padding="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/two_level_margin"
+                    android:text="@string/proceed"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout n1:theme="@style/WebAppTheme" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@+id/loader" n1:padding="@dimen/two_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintHorizontal_bias="0.0" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:layout_constraintVertical_bias="0.327" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <android.support.design.widget.TextInputLayout n1:id="@+id/input_layout_search" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/two_level_margin" n2:hintEnabled="false">
+            <EditText n1:id="@+id/input_search" n1:background="@drawable/input_style1" n1:padding="@dimen/one_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/search_goods_services" n1:inputType="textCapSentences|textMultiLine" />
+        </android.support.design.widget.TextInputLayout>
+        <Spinner n1:id="@+id/search_spinner" n1:background="@android:drawable/btn_dropdown" n1:padding="@dimen/one_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/two_level_margin" n1:layout_marginRight="@dimen/two_level_margin" />
+        <android.support.v7.widget.AppCompatButton n1:theme="@style/ButtonOrange" n1:textSize="20.0sp" n1:textColor="@android:color/white" n1:layout_gravity="center_horizontal" n1:id="@+id/btn_search" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="60.0dip" n1:layout_margin="@dimen/two_level_margin" n1:text="@string/search" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

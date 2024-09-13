@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:theme="@style/WebAppTheme"
+    tools:context="com.nistores.awesomeurch.nistores.folders.pages.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/three_level_margin">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="250dp"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nistore_logo"
+                android:contentDescription="@string/app_logo1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <LinearLayout
+                android:id="@+id/form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="@dimen/two_level_margin"
+                android:padding="@dimen/two_level_margin"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logo">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/two_level_margin"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/log_in_intro"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_name"
+                    android:layout_margin="@dimen/two_level_margin"
+                    android:layout_width="match_parent"
+                    app:hintEnabled="false"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/input_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:inputType="text"
+                        android:background="@drawable/input_style1"
+                        android:textColorHint="@color/whiteGrey"
+                        android:padding="@dimen/one_level_margin"
+                        android:hint="@string/hint_name" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_password"
+                    android:layout_margin="@dimen/two_level_margin"
+                    app:hintEnabled="false"
+                    app:hintTextAppearance="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/input_password"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/input_style1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:padding="@dimen/one_level_margin"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/whiteGrey"
+                        android:hint="@string/hint_password" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_sign_in"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/login"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:theme="@style/ButtonBlue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/or_divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/form"
+                android:layout_marginBottom="@dimen/two_level_margin"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:background="@color/whiteGrey"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="2">
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/or"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:background="@color/whiteGrey"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="2">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/two_level_margin"
+                android:padding="@dimen/two_level_margin"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/or_divider">
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/sign_up"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/create_account"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:theme="@style/ButtonTransparent" />
+            </LinearLayout>
+
+
+
+            <!--<LinearLayout
+                android:id="@+id/extra_action"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/two_level_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/one_level_margin"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/no_account"
+                    />
+                <TextView
+                    android:id="@+id/sign_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:text="@string/sign_up" />
+
+            </LinearLayout>-->
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/loader_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/transparentBlue"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <ProgressBar
+            android:id="@+id/loader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="@id/loader_layout"
+            app:layout_constraintTop_toTopOf="@id/loader_layout"
+            app:layout_constraintBottom_toBottomOf="@id/loader_layout"
+            app:layout_constraintLeft_toLeftOf="@id/loader_layout"
+            android:progressTint="@color/colorAccent"
+            tools:targetApi="lollipop" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

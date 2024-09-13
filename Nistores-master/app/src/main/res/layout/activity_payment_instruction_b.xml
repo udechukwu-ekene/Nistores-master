@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/WebAppTheme"
+    android:background="@color/littleGrey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".folders.pages.PaymentInstructionAActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/one_level_margin"
+            android:orientation="vertical">
+
+            <!--Pay in bank-->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/in_bank"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/font_three"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/title"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/how_to_make_bank_payment"/>
+
+                <TextView
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/make_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/you_can_make_payment_in_bank"/>
+
+                <TextView
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/account_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/account_name"/>
+
+                <TextView
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/account_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/account_number"/>
+
+                <TextView
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/bank"/>
+
+
+                <LinearLayout
+                    android:id="@+id/amount_a"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/font_two"
+                        android:textColor="@color/textColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/one_level_margin"
+                        android:text="@string/amount"/>
+
+                    <TextView
+                        android:id="@+id/pay_amount_a"
+                        android:textSize="@dimen/font_two"
+                        android:textColor="@color/textColor"
+                        android:drawableLeft="@drawable/icons8_naira_50"
+                        android:drawableStart="@drawable/icons8_naira_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/one_level_margin"
+                        android:text="@string/amount"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/depositor_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/depositor_name2"/>
+
+                <TextView
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/phone_no_your_phone"/>
+
+                <TextView
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/assure_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/when_you_make_payment_short"/>
+
+            </LinearLayout>
+
+            <!--Mobile transfer-->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/mobile_transfer"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/font_three"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/title_mobile"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/how_to_make_payment_via_mobile"/>
+
+                <TextView
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/make_payment_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/you_can_make_payment_via_mobile"/>
+
+                <TextView
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/account_name_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/account_name"/>
+
+                <TextView
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/account_number_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/account_number"/>
+
+                <TextView
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/bank"/>
+
+                <LinearLayout
+                    android:id="@+id/amount_b"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/font_two"
+                        android:textColor="@color/textColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/one_level_margin"
+                        android:text="@string/amount"/>
+
+                    <TextView
+                        android:id="@+id/pay_amount_b"
+                        android:textSize="@dimen/font_two"
+                        android:textColor="@color/textColor"
+                        android:drawableLeft="@drawable/icons8_naira_50"
+                        android:drawableStart="@drawable/icons8_naira_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/one_level_margin"
+                        android:text="@string/amount"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/depositor_b"
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/depositor_name2"/>
+
+                <TextView
+                    android:id="@+id/assure_a"
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/when_you_make_payment_short"/>
+
+            </LinearLayout>
+
+            <!--Agent-->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/agent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textSize="@dimen/font_three"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/title_agent"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/pay_through_agents"/>
+
+                <TextView
+                    android:textSize="@dimen/font_two"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/agent_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/contact_number"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:theme="@style/ButtonBlue"
+                    android:textSize="14.0sp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="start"
+                    android:id="@+id/btn_call"
+                    android:padding="10.0dip"
+                    android:layout_width="150.0dip"
+                    android:layout_height="45.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:text="@string/call_now" />
+
+            </LinearLayout>
+
+            <!--Card-->
+            <LinearLayout
+                android:id="@+id/card"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/font_three"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/title_card"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/one_level_margin"
+                    android:text="@string/pay_with_atm"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/payment_recycler"
+                    android:visibility="visible"
+                    android:scrollbars="horizontal"
+                    android:clipToPadding="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <ProgressBar
+                    android:id="@+id/loader"
+                    android:padding="@dimen/three_level_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/network_error"
+                    android:padding="56dp"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="@dimen/font_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/could_not_fetch_stores"/>
+                    <android.support.v7.widget.AppCompatButton
+                        android:theme="@style/ButtonBlue"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/btn_retry"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="24dp"
+                        android:text="@string/retry"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

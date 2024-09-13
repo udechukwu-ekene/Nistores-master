@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView n1:layout_gravity="center" n1:id="@+id/card_view" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:foreground="?selectableItemBackground" n2:cardCornerRadius="@dimen/zero_level_margin" n2:cardUseCompatPadding="true" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <TextView n1:id="@+id/product_id" n1:layout_width="0.0dip" n1:layout_height="0.0dip" />
+            <TextView n1:id="@+id/image_url" n1:layout_width="0.0dip" n1:layout_height="0.0dip" />
+            <TextView n1:id="@+id/store_id" n1:layout_width="0.0dip" n1:layout_height="0.0dip" />
+            <ImageView n1:id="@+id/thumbnail" n1:background="?selectableItemBackgroundBorderless" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:src="@drawable/index" n1:scaleType="fitCenter" n1:adjustViewBounds="true" n1:contentDescription="@string/load_product_pic" />
+            <TextView
+                n1:textSize="@dimen/font_one"
+                n1:textColor="@android:color/white"
+                n1:gravity="end"
+                n1:id="@+id/featured"
+                n1:background="@color/greenColorLight"
+                n1:padding="@dimen/zero_level_margin"
+                n1:visibility="gone"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/featured_ad"
+                n1:layout_above="@id/title" />
+            <TextView n1:textSize="@dimen/font_two" n1:textColor="@color/textColor" n1:id="@+id/title" n1:paddingLeft="@dimen/zero_level_margin" n1:paddingTop="@dimen/zero_level_margin" n1:paddingRight="@dimen/zero_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:lines="2" n1:layout_below="@+id/thumbnail" />
+            <TextView n1:textSize="@dimen/font_14" n1:textColor="@color/textColor" n1:id="@+id/store" n1:paddingLeft="@dimen/zero_level_margin" n1:paddingTop="@dimen/zero_level_margin" n1:paddingRight="@dimen/zero_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@+id/title" />
+            <TextView n1:textSize="@dimen/font_14" n1:textColor="@color/colorAccent" n1:id="@+id/price" n1:paddingLeft="@dimen/zero_level_margin" n1:paddingTop="@dimen/zero_level_margin" n1:paddingRight="@dimen/zero_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:drawableLeft="@drawable/naija_note" n1:layout_below="@+id/store" n1:drawableStart="@drawable/naija_note" />
+            <LinearLayout n1:padding="@dimen/one_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/zero_level_margin" n1:layout_below="@+id/price">
+                <TextView n1:textSize="@dimen/font_one" n1:id="@+id/likes" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:drawableLeft="@drawable/ic_thumb_up_black_24dp" n1:layout_weight="1.0" n1:drawableStart="@drawable/ic_thumb_up_black_24dp" />
+                <TextView n1:textSize="@dimen/font_one" n1:id="@+id/views" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:drawableLeft="@drawable/ic_views" n1:layout_weight="1.0" n1:drawableStart="@drawable/ic_views" />
+                <TextView n1:textSize="@dimen/font_18" n1:textColor="@color/textColor" n1:id="@+id/negotiate" n1:background="?selectableItemBackground" n1:padding="@dimen/one_level_margin" n1:focusable="true" n1:clickable="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/negotiate" n1:drawableLeft="@drawable/ic_comment_color" n1:layout_weight="2.0" n1:drawableStart="@drawable/ic_comment_color" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

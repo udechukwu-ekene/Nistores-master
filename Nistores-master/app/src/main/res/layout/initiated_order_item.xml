@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:padding="@dimen/one_level_margin" android:layout_margin="@dimen/zero_level_margin" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_18" android:textColor="@color/textColor" android:id="@+id/order_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/profile" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/font_one" android:textColor="@color/textColor" android:id="@+id/date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/yes_account" android:maxLines="1"/>
+        <TextView android:id="@+id/order_id" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp"/>
+    </LinearLayout>

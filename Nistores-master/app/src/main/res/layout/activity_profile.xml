@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout n1:theme="@style/WebAppTheme" n1:background="@color/littleGrey" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <android.support.constraint.ConstraintLayout n1:id="@+id/info_layout" n1:padding="@dimen/three_level_margin" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="vertical" n1:id="@+id/l1" n1:background="@drawable/theme_background" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView
+                    n1:layout_gravity="center"
+                    n1:id="@+id/profile_picture"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="200dp"
+                    n1:layout_margin="@dimen/one_level_margin"
+                    n1:scaleType="fitCenter"
+                    n1:adjustViewBounds="true"
+                    n1:contentDescription="@string/default_picture"
+                    n2:srcCompat="@drawable/ic_person_default"
+                    xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textAlignment="center" n1:textSize="@dimen/font_three" n1:textColor="@color/textColor" n1:id="@+id/full_name" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/one_level_margin" n1:text="Name" />
+                <TextView n1:textAlignment="center" n1:textSize="@dimen/font_14" n1:id="@+id/address" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/one_level_margin" n1:text="Name" />
+                <android.support.v7.widget.AppCompatButton
+                    n1:theme="@style/ButtonOrange"
+                    n1:textColor="@android:color/white"
+                    n1:textSize="@dimen/font_two"
+                    n1:layout_gravity="center_horizontal"
+                    n1:id="@+id/edit_btn"
+                    n1:padding="10.0dip"
+                    n1:layout_width="120.0dip"
+                    n1:layout_height="50.0dip"
+                    n1:layout_margin="@dimen/two_level_margin"
+                    n1:text="@string/edit_profile" />
+                <android.support.v7.widget.AppCompatButton
+                    n1:theme="@style/ButtonOrange"
+                    n1:textColor="@android:color/white"
+                    n1:textSize="@dimen/font_two"
+                    n1:layout_gravity="center_horizontal"
+                    n1:id="@+id/add_contact_btn"
+                    n1:padding="10.0dip"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="50.0dip"
+                    n1:layout_margin="@dimen/zero_level_margin"
+                    n1:text="@string/add_to_contacts" />
+                <android.support.v7.widget.AppCompatButton
+                    n1:theme="@style/ButtonOrange"
+                    n1:textColor="@android:color/white"
+                    n1:textSize="@dimen/font_two"
+                    n1:layout_gravity="center_horizontal"
+                    n1:id="@+id/follow_btn"
+                    n1:padding="10.0dip"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="50.0dip"
+                    n1:layout_margin="@dimen/zero_level_margin"
+                    n1:text="@string/follow" />
+                <android.support.v7.widget.AppCompatButton
+                    n1:theme="@style/ButtonOrange"
+                    n1:textColor="@android:color/white"
+                    n1:textSize="@dimen/font_two"
+                    n1:layout_gravity="center_horizontal"
+                    n1:id="@+id/message_btn"
+                    n1:padding="10.0dip"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="50.0dip"
+                    n1:layout_margin="@dimen/zero_level_margin"
+                    n1:text="@string/send_private_message" />
+            </LinearLayout>
+            <LinearLayout n1:orientation="vertical" n1:background="@drawable/theme_background" n1:padding="@dimen/one_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/three_level_margin" n3:layout_constraintTop_toBottomOf="@+id/l1" xmlns:n3="http://schemas.android.com/apk/res-auto">
+                <LinearLayout n1:id="@+id/member_layout" n1:padding="@dimen/zero_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="@dimen/font_two" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/member_since" n1:drawableLeft="@drawable/ic_date_range" n1:drawablePadding="@dimen/zero_level_margin" n1:layout_weight="1.0" n1:drawableStart="@drawable/ic_date_range" />
+                    <TextView n1:textAlignment="textEnd" n1:textSize="@dimen/font_one" n1:layout_gravity="end" n1:id="@+id/reg_date" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout n1:background="@color/whiteGrey" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="4.0dip" />
+                <LinearLayout n1:padding="@dimen/zero_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="@dimen/font_two" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/views" n1:drawableLeft="@drawable/ic_views" n1:drawablePadding="@dimen/zero_level_margin" n1:layout_weight="1.0" n1:drawableStart="@drawable/ic_views" />
+                    <TextView n1:textAlignment="textEnd" n1:textSize="@dimen/font_one" n1:layout_gravity="end" n1:id="@+id/views" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout n1:background="@color/whiteGrey" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="4.0dip" />
+                <LinearLayout n1:padding="@dimen/zero_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="@dimen/font_two" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/followers" n1:drawableLeft="@drawable/ic_group" n1:drawablePadding="@dimen/zero_level_margin" n1:layout_weight="1.0" n1:drawableStart="@drawable/ic_group" />
+                    <TextView n1:textAlignment="textEnd" n1:textSize="@dimen/font_one" n1:layout_gravity="end" n1:id="@+id/followers" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout n1:background="@color/whiteGrey" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="4.0dip" />
+                <LinearLayout n1:padding="@dimen/zero_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="@dimen/font_two" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/following" n1:drawableLeft="@drawable/ic_people_outline" n1:drawablePadding="@dimen/zero_level_margin" n1:layout_weight="1.0" n1:drawableStart="@drawable/ic_people_outline" />
+                    <TextView n1:textAlignment="textEnd" n1:textSize="@dimen/font_one" n1:layout_gravity="end" n1:id="@+id/following" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout n1:background="@color/whiteGrey" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="4.0dip" />
+                <LinearLayout n1:padding="@dimen/zero_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="@dimen/font_two" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/contacts" n1:drawableLeft="@drawable/ic_contacts" n1:drawablePadding="@dimen/zero_level_margin" n1:layout_weight="1.0" n1:drawableStart="@drawable/ic_contacts" />
+                    <TextView n1:textAlignment="textEnd" n1:textSize="@dimen/font_one" n1:layout_gravity="end" n1:id="@+id/contacts" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout n1:background="@color/whiteGrey" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="4.0dip" />
+                <LinearLayout n1:padding="@dimen/zero_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="@dimen/font_two" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/topics" n1:drawableLeft="@drawable/ic_layers" n1:drawablePadding="@dimen/zero_level_margin" n1:layout_weight="1.0" n1:drawableStart="@drawable/ic_layers" />
+                    <TextView n1:textAlignment="textEnd" n1:textSize="@dimen/font_one" n1:layout_gravity="end" n1:id="@+id/topics" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout n1:background="@color/whiteGrey" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="4.0dip" />
+                <LinearLayout n1:padding="@dimen/zero_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="@dimen/font_two" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/email" n1:drawableLeft="@drawable/ic_email" n1:drawablePadding="@dimen/zero_level_margin" n1:layout_weight="1.0" n1:drawableStart="@drawable/ic_email" />
+                    <TextView n1:textAlignment="textEnd" n1:textSize="@dimen/font_one" n1:layout_gravity="end" n1:id="@+id/email" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout n1:background="@color/whiteGrey" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="4.0dip" />
+                <LinearLayout n1:padding="@dimen/zero_level_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="@dimen/font_two" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/status" n1:drawableLeft="@drawable/ic_textsms" n1:drawablePadding="@dimen/zero_level_margin" n1:layout_weight="1.0" n1:drawableStart="@drawable/ic_textsms" />
+                    <TextView n1:textAlignment="textEnd" n1:textSize="@dimen/font_one" n1:id="@+id/status" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0"
+                        n1:layout_gravity="end" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+    <android.support.constraint.ConstraintLayout n1:id="@+id/network_error_layout" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:padding="56.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="@+id/network_error_layout" n4:layout_constraintLeft_toLeftOf="@+id/network_error_layout" n4:layout_constraintRight_toRightOf="@+id/network_error_layout" n4:layout_constraintTop_toTopOf="@+id/network_error_layout" xmlns:n4="http://schemas.android.com/apk/res-auto">
+            <TextView n1:textSize="@dimen/font_three" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/network_error" />
+            <android.support.v7.widget.AppCompatButton n1:theme="@style/ButtonBlue" n1:textSize="20.0sp" n1:textColor="@android:color/white" n1:layout_gravity="center_horizontal" n1:id="@+id/btn_retry" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="60.0dip" n1:layout_marginTop="24.0dip" n1:layout_marginBottom="24.0dip" n1:text="@string/retry" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout n1:id="@+id/loader_layout" n1:background="@color/transparentBlue" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintLeft_toLeftOf="parent" n5:layout_constraintRight_toRightOf="parent" n5:layout_constraintTop_toTopOf="parent" xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <ProgressBar n1:id="@+id/loader" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n5:layout_constraintBottom_toBottomOf="@+id/loader_layout" n5:layout_constraintLeft_toLeftOf="@+id/loader_layout" n5:layout_constraintRight_toRightOf="@+id/loader_layout" n5:layout_constraintTop_toTopOf="@+id/loader_layout" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

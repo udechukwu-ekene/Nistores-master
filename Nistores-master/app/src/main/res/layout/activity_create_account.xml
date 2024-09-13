@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background2"
+    tools:context="com.nistores.awesomeurch.nistores.folders.pages.CreateAccountActivity"
+    android:theme="@style/WebAppTheme"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/four_level_margin">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/nistore_logo" android:contentDescription="@string/app_logo1" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <LinearLayout android:orientation="vertical" android:id="@+id/form" android:paddingLeft="@dimen/two_level_margin" android:paddingRight="@dimen/two_level_margin" android:paddingBottom="@dimen/two_level_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/two_level_margin" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toBottomOf="@+id/logo" xmlns:n3="http://schemas.android.com/apk/res-auto">
+                <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_fname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/two_level_margin" n3:hintEnabled="false" n3:hintTextAppearance="@android:color/white">
+                    <EditText android:textColor="@android:color/white" android:textColorHint="@color/whiteGrey" android:id="@+id/input_fname" android:background="@drawable/input_style1" android:padding="@dimen/one_level_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/first_name" android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_surname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/two_level_margin" n3:hintEnabled="false" n3:hintTextAppearance="@android:color/white">
+                    <EditText android:textColor="@android:color/white" android:textColorHint="@color/whiteGrey" android:id="@+id/input_surname" android:background="@drawable/input_style1" android:padding="@dimen/one_level_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/surname" android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/two_level_margin" n3:hintEnabled="false" n3:hintTextAppearance="@android:color/white">
+                    <EditText android:textColor="@android:color/white" android:textColorHint="@color/whiteGrey" android:id="@+id/input_username" android:background="@drawable/input_style1" android:padding="@dimen/one_level_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/username" android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/two_level_margin" n3:hintEnabled="false" n3:hintTextAppearance="@android:color/white">
+                    <EditText android:textColor="@android:color/white" android:textColorHint="@color/whiteGrey" android:id="@+id/input_email" android:background="@drawable/input_style1" android:padding="@dimen/one_level_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/email" android:singleLine="true" android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/two_level_margin" n3:hintEnabled="false" n3:hintTextAppearance="@android:color/white">
+                    <EditText android:textColor="@android:color/white" android:textColorHint="@color/whiteGrey" android:id="@+id/input_password" android:background="@drawable/input_style1" android:padding="@dimen/one_level_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/password" android:singleLine="true" android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_cpassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/two_level_margin" n3:hintEnabled="false" n3:hintTextAppearance="@android:color/white">
+                    <EditText android:textColor="@android:color/white" android:textColorHint="@color/whiteGrey" android:id="@+id/input_cpassword" android:background="@drawable/input_style1" android:padding="@dimen/one_level_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/confirm_password" android:singleLine="true" android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
+                <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/two_level_margin" android:layout_marginLeft="@dimen/two_level_margin" android:layout_marginTop="@dimen/two_level_margin" android:text="@string/select_loc" />
+                <Spinner android:textColor="@android:color/white" android:id="@+id/location_spinner" android:background="@drawable/input_style1" android:padding="@dimen/one_level_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/two_level_margin" android:layout_marginRight="@dimen/two_level_margin" />
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/two_level_margin"
+                    android:layout_marginLeft="@dimen/two_level_margin"
+                    android:layout_marginTop="@dimen/two_level_margin"
+                    android:text="@string/select_interest" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_category"
+                    android:layout_marginStart="@dimen/one_level_margin"
+                    android:layout_marginLeft="@dimen/one_level_margin"
+                    android:layout_marginRight="@dimen/one_level_margin"
+                    android:layout_marginEnd="@dimen/one_level_margin"
+                    android:scrollbars="vertical"
+                    android:clipToPadding="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- Network error layout for categories -->
+                <LinearLayout
+                    android:id="@+id/network_error_layout"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="56.0dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="@dimen/font_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/could_not_fetch_interests" />
+                    <android.support.v7.widget.AppCompatButton
+                        android:theme="@style/ButtonBlue"
+                        android:textSize="14.0sp"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/btn_retry"
+                        android:padding="10.0dip"
+                        android:layout_width="150.0dip"
+                        android:layout_height="45.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:layout_marginBottom="10.0dip"
+                        android:text="@string/retry" />
+                </LinearLayout>
+                <!-- End Network error layout for categories -->
+
+                <android.support.v7.widget.AppCompatButton
+                    android:theme="@style/ButtonOrange"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/btn_sign_up"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="@dimen/four_level_margin"
+                    android:text="@string/complete_reg" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/extra_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/two_level_margin" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintTop_toBottomOf="@+id/form" xmlns:n4="http://schemas.android.com/apk/res-auto">
+                <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:padding="@dimen/one_level_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes_account" />
+                <Button
+                    android:textSize="18.0sp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/sign_in"
+                    android:background="@android:color/white"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_sign_in" />
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/app_process" />
+
+</android.support.constraint.ConstraintLayout>
